@@ -11,14 +11,6 @@ public interface UsersMapper {
 
     int insert(Users record);
 
-    int insertSelective(Users record);
-
-    Users selectByPrimaryKey(String id);
-
-    int updateByPrimaryKeySelective(Users record);
-
-    int updateByPrimaryKey(Users record);
-
     List<Map<String,String>> selectMap();
 
 }

@@ -72,7 +72,7 @@ public class UsersService {
     }
 
     /**
-     * 4.添加事务，异常数据，不使用try catch，抛出非RuntimeExcepiton或其子类
+     * 4.添加事务，异常数据，使用try catch捕获，不抛出异常
      * */
     @Transactional
     public void insert4(Users user1,Users user2){
@@ -93,7 +93,7 @@ public class UsersService {
 
 
     /**
-     * 5.添加事务，异常数据，使用try catch捕获，抛出RuntimeException
+     * 55.添加事务，异常数据，使用try catch捕获，抛出RuntimeException
      * */
     @Transactional
     public void insert5(Users user1,Users user2){
